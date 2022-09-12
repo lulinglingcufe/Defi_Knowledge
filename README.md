@@ -13,7 +13,8 @@ ETH：以太坊原生代币，消耗gas才能执行合约。
 
 WETH：包装后的ETH。以太坊上的代币发行采用erc-20标准。实际上是通过一个合约来发行代币的。WETH的逻辑是某个部署在以太坊上的公共合约（这个合约的安全性已经在多年的使用中被验证了。一般来说，如果公开的合约存在漏洞，并且有利可图，聪明的黑客就会利用合约漏洞来获利）。用户向WETH里面存一个eth就可以得到一个erc-20格式的weth。因为很多需要交互的合约，需要接收erc-20标准的代币来实现功能。
 
-DAI:基于抵押的稳定币（白皮书：https://makerdao.com/whitepaper/Dai-Whitepaper-Dec17-zh.pdf）。去中心化自治组织MakerDAO：TODO
+DAI:基于抵押的稳定币（白皮书：https://makerdao.com/whitepaper/Dai-Whitepaper-Dec17-zh.pdf）。
+去中心化自治组织MakerDAO：TODO
 
 USDT：Tether公司向外界宣布，他有很多美元的储备。用户给他一美元，他才会在区块链上发行1美元的USDT。目前大家都相信这个故事。
 
