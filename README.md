@@ -32,3 +32,12 @@ Uniswap中的套利者：https://m.jinse.com/news/blockchain/1183158.html
 
 无常损失(Impermanent loss，也称“非永久性损失”)：https://academy.binance.com/zh/articles/impermanent-loss-explained
 
+一些比较基础的defi项目：
+
+aave: 待查资料
+
+compound: 待查资料
+
+Luna：待查资料
+
+
