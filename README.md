@@ -31,6 +31,8 @@ Uniswap协议:第一个是交易功能,我们通常把swap（即交易）的一�
 
 Uniswap中的套利者：https://m.jinse.com/news/blockchain/1183158.html
 
+TODO:Uniswap中的买卖行为如何解释motivation？当用户通过池子交换代币时，他的对手方是谁，是池子的流动性提供者吗？流动性提供者对自己提供的流动性代币是看空还是看多，还是无所谓？他是如何承担无常损失的？
+
 闪电贷：许多链上的defi协议（合约）支持闪电贷。例如用户可以在一个区块内、一笔交易里面向Uniswap借出一定资金进行一些套利活动，然后再把同样的资金还给Uniswap，这就解决了很多套利活动、套利者可能缺乏资金的问题。
 
 无常损失(Impermanent loss，也称“非永久性损失”)：https://academy.binance.com/zh/articles/impermanent-loss-explained
