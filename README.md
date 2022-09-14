@@ -39,6 +39,8 @@ TODO:Uniswap中的买卖行为如何解释motivation？当用户通过池子交�
 
 别人也写过类似的wiki：https://0ptim.github.io/DeFiChain-Wiki/docs/auto/Impermanent_Loss
 
+周老师的主页和blocksec的科普：https://yajin.org/
+
 一些比较基础的defi项目：
 
 aave: 待查资料
