@@ -1,52 +1,53 @@
-# Defi_Knowledge
+# 测试币
 
-oracle:预言机、链下数据提供者、feed数据到链上。通常是通过（需要使用oracle信息的合约）调用oracle合约的地址实现读取链下数据，如eth价格、btc价格、随机数等。
-目前最常见使用的oracle方案是chainlink。oracle一般可以认为是一定会提供真实信息的。
-听说chainlink也是一个网络？chainlink里面，提供链下数据是需要质押link代币的。节点提供真实数据，可以获得link代币作为回报。如果提供了错误的数据/服务，就可能被扣減質押的LINK代币。
+MetaMask的使用，还有一些测试币的获取。
 
-随机数：为什么智能合约里面不能使用random()来产生随机数？智能合约的执行必须是确定性的。也就是说，给定输入和合约逻辑，不论是什么样的机器来运行合约，得到执行的结果都是一样的。因此以太坊需要在EVM虚拟机中执行合约，EVM虚拟化出了栈、内存、存储的结构。
+https://hackernoon.com/zh/%E4%BD%BF%E7%94%A8-remix-%E6%88%96-dapp-%E5%BC%80%E5%8F%91%E7%B3%BB%E5%88%97%E5%9C%A8-ethereums-sepolia-testnet-%E4%B8%8A%E9%83%A8%E7%BD%B2%E4%BD%A0%E7%9A%84%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6
 
-矿工挖矿（1.交易记账+2.多次计算得到目标hash）
+https://docs.chain.link/resources/acquire-link
 
-矿工验证区块的正确性（1.任何节点，只要花费计算资源，就可以通过evm重新执行区块中的交易，确认交易记账是否正确，2.验证区块符合目标hash很简单）
+Chainlink的节点通过质押Link代币来保证数据源的正确性。
 
-ETH：以太坊原生代币，消耗gas才能执行合约。
+Chainlink当前进展：https://zhuanlan.zhihu.com/p/605672260
 
-WETH：包装后的ETH。以太坊上的代币发行采用erc-20标准。实际上是通过一个合约来发行代币的。WETH的逻辑是某个部署在以太坊上的公共合约（这个合约的安全性已经在多年的使用中被验证了。一般来说，如果公开的合约存在漏洞，并且有利可图，聪明的黑客就会利用合约漏洞来获利）。用户向WETH里面存一个eth就可以得到一个erc-20格式的weth。因为很多需要交互的合约，需要接收erc-20标准的代币来实现功能。
+# USDT 
+先C2C买U，然后用U买BTC/ETH。
 
-DAI:基于抵押的稳定币（白皮书：https://makerdao.com/whitepaper/Dai-Whitepaper-Dec17-zh.pdf ）
-DAI大致原理：https://www.sohu.com/a/482531206_100217347
-去中心化自治组织MakerDAO：TODO
+波场上发行的USDT转账手续费低。
 
-USDT：Tether公司向外界宣布，他有很多美元的储备。用户给他一美元，他才会在区块链上发行1美元的USDT。目前大家都相信这个故事。
+https://www.binance.com/zh-CN/support/faq/usdt%E5%A4%9A%E7%BD%91%E7%BB%9C%E7%AE%80%E4%BB%8B-360040487711
 
-代币是defi生态的流动性基础。流动性提供者（抵押物）和套利者（清算者）是协议中重要的部分。
+从币安提现到某个账户：
+https://www.binance.com/zh-CN/support/faq/%E5%A6%82%E4%BD%95%E8%BF%9B%E8%A1%8C%E5%86%85%E9%83%A8%E8%BD%AC%E8%B4%A6-360037037312
 
-Uniswap协议:第一个是交易功能,我们通常把swap（即交易）的一个“交易对”称作流动池，每个池一般两个资产，这两个资产可以在该资产池中进行交换。
-例如ETH-USDT的池子、DAI-USDT的池子。
+稳定币：USDC
+主流稳定币：https://zhuanlan.zhihu.com/p/513722528
 
-例如用户向池子里按照AB资产当前的价格（那么A\B的比值就是当前的价格。），存入100个A和10个B（一次必须存入两种代币，这些代币就可以认为是锁仓量）。池子会给用户返回LP token。流动性凭证。
 
-其他用户可以从池子里面兑换使用A兑换出B，并且付出一定的手续费。手续费可以按照LP的比例，分给持有LP token的用户。因为他们提供了池子里代币的流动性。
+# DAI
+超额抵押。存入1个ETH，借出市场价80%的DAI。一旦到清算价格，就可以进行链上清算。
 
-Uniswap中的套利者：https://m.jinse.com/news/blockchain/1183158.html
 
-TODO:Uniswap中的买卖行为如何解释motivation？当用户通过池子交换代币时，他的对手方是谁，是池子的流动性提供者吗？流动性提供者对自己提供的流动性代币是看空还是看多，还是无所谓？他是如何承担无常损失的？
+# ETH质押
 
-闪电贷：许多链上的defi协议（合约）支持闪电贷。例如用户可以在一个区块内、一笔交易里面向Uniswap借出一定资金进行一些套利活动，然后再把同样的资金还给Uniswap，这就解决了很多套利活动、套利者可能缺乏资金的问题。
+币安ETH 2.0质押
 
-无常损失(Impermanent loss，也称“非永久性损失”)：https://academy.binance.com/zh/articles/impermanent-loss-explained
+以太坊2.0经济激励机制
 
-别人也写过类似的wiki：https://0ptim.github.io/DeFiChain-Wiki/docs/auto/Impermanent_Loss
+# binance市场
 
-周老师的主页和blocksec的科普：https://yajin.org/
+binance的理财产品不会提供产品结构与标的说明，只有预期收益率。
 
-一些比较基础的defi项目：
+BNB相关的新闻：
 
-aave: 待查资料
+BNB从周线来看，还有下降的趋势。主要是由于不能发行新的代币。
 
-compound: 待查资料
+biance市场占有率70%以上，因此在binance存币、期货交易、保本交易90%以上的概率是安全的。
 
-Luna：https://www.bilibili.com/video/BV1fT411T7C2
+
+
+
+
+
 
 
